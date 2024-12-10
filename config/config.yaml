@@ -1,0 +1,72 @@
+validations:
+  required_fields:
+    - Store Name
+    - Barcode
+    - Article Number
+    - Product Name
+    - Brand
+    - Aisle
+    - Department
+    - Case Pack Size
+    - SR at Marked at Time
+    - Current SR
+    - Marked by
+    - Marked At
+    - Marked As
+    - Last Received Date
+    - Approval
+  length_constraints:
+    Store Name:
+      min: 1
+      max: 255
+    Barcode:
+      min: 15
+      max: 15
+    Product Name:
+      min: 1
+      max: 255
+    Aisle:
+      min: 1
+      max: 4
+    Department:
+      min: 1
+      max: 255
+    Marked by:
+      min: 1
+      max: 255
+    Marked As:
+      min: 1
+      max: 255
+    Approval:
+      min: 1
+      max: 255
+  formats:
+    Store Name: str
+    Barcode: str
+    Article Number: int
+    Product Name: str
+    Aisle: str
+    Department: str
+    Case Pack Size: int
+    SR at Marked at Time: float
+    Current SR: int
+    Marked by: str
+    Marked At: date
+    Marked As: str
+    Last Received Date: date
+    Approval: str
+lookups:
+  Aisle:
+    - GR18
+    - GR19
+    - GR21
+    - LR04
+  Department:
+    - Grocery
+    - Home & Leisure
+  Approval:
+    - AUTO
+  Marked As:
+    - No Stock
+  Marked by:
+    - Michal Jurkowski

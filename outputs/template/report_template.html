@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        h2 { color: #007BFF; }
+        .failed { color: red; }
+        .passed { color: green; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Validation Report</h1>
+
+    <h2>CSV Validation Results</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Validation Type</th>
+                <th>Status</th>
+                <th>Errors</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>Presence Validation</td>
+                <td class="{{ result.presence_class }}">{{ result.presence_status }}</td>
+                <td>
+                    {% if result.presence_errors %}
+                        <ul>
+                        {% for error in result.presence_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        Presence Validation successfully passed.
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td>Format Validation</td>
+                <td class="{{ result.format_class }}">{{ result.format_status }}</td>
+                <td>
+                    {% if result.format_errors %}
+                        <ul>
+                        {% for error in result.format_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        Format Validation successfully passed.
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td>Length Validation</td>
+                <td class="{{ result.length_class }}">{{ result.length_status }}</td>
+                <td>
+                    {% if result.length_errors %}
+                        <ul>
+                        {% for error in result.length_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        Length Validation successfully passed.
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td>Lookup Validation</td>
+                <td class="{{ result.lookup_class }}">{{ result.lookup_status }}</td>
+                <td>
+                    {% if result.lookup_errors %}
+                        <ul>
+                        {% for error in result.lookup_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        Lookup Validation successfully passed.
+                    {% endif %}
+                </td>
+            </tr>
+            <tr>
+                <td>Exact Value Validation</td>
+                <td class="{{ result.exact_value_class }}">{{ result.exact_value_status }}</td>
+                <td>
+                    {% if result.exact_value_errors %}
+                        <ul>
+                        {% for error in result.exact_value_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        Exact Value Validation successfully passed.
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>PDF Validation Results</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Validation Type</th>
+                <th>Status</th>
+                <th>Errors</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>PDF Validation</td>
+                <td class="{{ result.pdf_class }}">{{ result.pdf_status }}</td>
+                <td>
+                    {% if result.pdf_errors %}
+                        <ul>
+                        {% for error in result.pdf_errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        PDF Validation successfully passed.
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

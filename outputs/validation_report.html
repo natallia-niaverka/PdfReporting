@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        h2 { color: #007BFF; }
+        .failed { color: red; }
+        .passed { color: green; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { padding: 8px 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h1>Validation Report</h1>
+
+    <h2>CSV Validation Results</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Validation Type</th>
+                <th>Status</th>
+                <th>Errors</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Presence Validation</td>
+                <td class="passed">PASSED</td>
+                <td>
+                    
+                        Presence Validation successfully passed.
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Format Validation</td>
+                <td class="failed">FAILED</td>
+                <td>
+                    
+                        <ul>
+                        
+                            <li>Field 'Barcode' should be of type str in row 1.</li>
+                        
+                            <li>Field 'Barcode' should be of type str in row 2.</li>
+                        
+                            <li>Field 'Barcode' should be of type str in row 3.</li>
+                        
+                            <li>Field 'Barcode' should be of type str in row 4.</li>
+                        
+                            <li>Field 'Barcode' should be of type str in row 5.</li>
+                        
+                            <li>Field 'Barcode' should be of type str in row 6.</li>
+                        
+                            <li>Field 'Barcode' should be of type str in row 7.</li>
+                        
+                            <li>Field 'Barcode' should be of type str in row 8.</li>
+                        
+                        </ul>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Length Validation</td>
+                <td class="failed">FAILED</td>
+                <td>
+                    
+                        <ul>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 1.</li>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 2.</li>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 3.</li>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 4.</li>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 5.</li>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 6.</li>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 7.</li>
+                        
+                            <li>Field 'Barcode' is expected to be a string but got int in row 8.</li>
+                        
+                        </ul>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Lookup Validation</td>
+                <td class="passed">PASSED</td>
+                <td>
+                    
+                        Lookup Validation successfully passed.
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Exact Value Validation</td>
+                <td class="failed">FAILED</td>
+                <td>
+                    
+                        <ul>
+                        
+                            <li>No expected value found for Barcode '8002210125070' in row 1.</li>
+                        
+                            <li>No expected value found for Barcode '5060960661395' in row 2.</li>
+                        
+                            <li>No expected value found for Barcode '5014276701504' in row 3.</li>
+                        
+                            <li>No expected value found for Barcode '5010251614586' in row 4.</li>
+                        
+                            <li>No expected value found for Barcode '8003753900438' in row 5.</li>
+                        
+                            <li>No expected value found for Barcode '7612100054017' in row 6.</li>
+                        
+                            <li>No expected value found for Barcode '7613037280364' in row 7.</li>
+                        
+                            <li>No expected value found for Barcode '5010525188072' in row 8.</li>
+                        
+                        </ul>
+                    
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <h2>PDF Validation Results</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Validation Type</th>
+                <th>Status</th>
+                <th>Errors</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>PDF Validation</td>
+                <td class="failed">FAILED</td>
+                <td>
+                    
+                        <ul>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                            <li>Line 'Store Name Barcode Article Number Product Name Brand Aisle Department Pack Marked Marked At Received Approval' not found in expected data from PDF (line 5).</li>
+                        
+                            <li>Line 'Size at Time Date' not found in expected data from PDF (line 7).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 9).</li>
+                        
+                            <li>Line 'SuperStore 08002210125070 BALSAMIC VINEGAR GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 10).</li>
+                        
+                            <li>Line 'Jurkowski 15:45:44 Stock 23:00:00' not found in expected data from PDF (line 11).</li>
+                        
+                            <li>Line '#101 OF MODENA 250ML' not found in expected data from PDF (line 12).</li>
+                        
+                            <li>Line 'SEA SALT CRISPY Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 16).</li>
+                        
+                            <li>Line 'SuperStore 05060960661395 GR18 Grocery 8 0 8 AUTO' not found in expected data from PDF (line 17).</li>
+                        
+                            <li>Line 'SEAWEED THINS Jurkowski 15:52:01 Stock 23:00:00' not found in expected data from PDF (line 18).</li>
+                        
+                            <li>Line 'MULTIPACK 4 X 5G' not found in expected data from PDF (line 20).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 23).</li>
+                        
+                            <li>Line 'SuperStore 05014276701504 YUTAKA KIMCHI 200G GR18 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 24).</li>
+                        
+                            <li>Line 'Jurkowski 15:51:27 Stock 23:00:00' not found in expected data from PDF (line 25).</li>
+                        
+                            <li>Line 'TOMATO PUREE WITH Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 29).</li>
+                        
+                            <li>Line 'SuperStore 05010251614586 GR19 Grocery 12 0 24 AUTO' not found in expected data from PDF (line 30).</li>
+                        
+                            <li>Line 'GARLIC 135G Jurkowski 15:32:26 Stock 23:00:00' not found in expected data from PDF (line 31).</li>
+                        
+                            <li>Line 'ILLY ESPRESSO Michal 2024-10-28 No 2024-10-19' not found in expected data from PDF (line 35).</li>
+                        
+                            <li>Line 'SuperStore 08003753900438 GR21 Grocery 6 0 6 AUTO' not found in expected data from PDF (line 36).</li>
+                        
+                            <li>Line 'COFFEE 250G Jurkowski 12:03:49 Stock 23:00:00' not found in expected data from PDF (line 37).</li>
+                        
+                            <li>Line 'OPTIONS BELGIAN Michal 2024-10-28 No 2024-10-12' not found in expected data from PDF (line 41).</li>
+                        
+                            <li>Line 'SuperStore 07612100054017 GR21 Grocery 30 0 30 AUTO' not found in expected data from PDF (line 42).</li>
+                        
+                            <li>Line 'CHOC DRINK 11G Jurkowski 12:08:19 Stock 23:00:00' not found in expected data from PDF (line 43).</li>
+                        
+                            <li>Line 'Michal 2024-10-28 No 2024-10-21' not found in expected data from PDF (line 47).</li>
+                        
+                            <li>Line 'SuperStore 07613037280364 NESPRESSO DARK GR21 Grocery 8 -2 12 AUTO' not found in expected data from PDF (line 48).</li>
+                        
+                            <li>Line 'Jurkowski 12:29:31 Stock 23:00:00' not found in expected data from PDF (line 49).</li>
+                        
+                            <li>Line 'HALLWAY RUNNER Home & Michal 2024-10-28 No 2024-10-09' not found in expected data from PDF (line 53).</li>
+                        
+                            <li>Line 'SuperStore 05010525188072 LR04 6 5 5 AUTO' not found in expected data from PDF (line 54).</li>
+                        
+                            <li>Line 'GREY 50CM X 150CM Leisure Jurkowski 11:34:31 Stock 23:00:00' not found in expected data from PDF (line 55).</li>
+                        
+                        </ul>
+                    
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
